@@ -172,3 +172,75 @@ MOBILE
     justify-content: center;
   }
 }
+/* =========================
+MOBILE NAV (HAMBURGER)
+========================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #e3d48d;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #000;
+    padding: 15px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(227,212,141,0.2);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* =========================
+GLOBAL POLISH
+========================= */
+
+section {
+  padding: 90px 8%;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(227,212,141,0.15);
+}
+
+/* smoother cards */
+.card, .member-card, .tier-card, .product-card, .contact-card {
+  transition: all 0.3s ease;
+}
+
+/* image placeholders feel more real */
+.photo, .product-img {
+  letter-spacing: 1px;
+}
