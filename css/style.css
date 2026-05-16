@@ -1,1 +1,174 @@
 
+/* =========================
+GLOBAL STYLES
+BPAA - Beta Phi Alumni Association
+Black + Old Gold Theme
+========================= */
+
+:root {
+  --black: #000000;
+  --gold: #e3d48d;
+  --dark: #111111;
+  --text: #f5f5f5;
+  --muted: #bdbdbd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--black);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* =========================
+TYPOGRAPHY
+========================= */
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+}
+
+p {
+  color: var(--muted);
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.92);
+  border-bottom: 1px solid rgba(227,212,141,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--gold);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+/* =========================
+BUTTONS
+========================= */
+
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background: var(--gold);
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: black;
+}
+
+/* =========================
+SECTIONS
+========================= */
+
+section {
+  padding: 100px 8%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* =========================
+CARDS
+========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--dark);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(227,212,141,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+  padding: 60px 8%;
+  border-top: 1px solid rgba(227,212,141,0.15);
+  background: #050505;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
