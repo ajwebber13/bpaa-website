@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Beta Phi Alumni Association | Est. 1938</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat', sans-serif;
+background:#000;
+color:#fff;
+line-height:1.7;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.92);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+border-bottom:1px solid rgba(227,212,141,0.25);
+}
+
+.logo{
+font-family:'Playfair Display', serif;
+font-size:1.5rem;
+font-weight:700;
+color:#e3d48d;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#e3d48d;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
+
+.hero-content h1{
+font-size:4rem;
+font-family:'Playfair Display', serif;
+color:#e3d48d;
+margin-bottom:20px;
+}
+
+.hero-content p{
+max-width:800px;
+margin:auto;
+font-size:1.2rem;
+}
+
+.hero-buttons{
+margin-top:35px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:14px 30px;
+background:#e3d48d;
+color:#000;
+text-decoration:none;
+font-weight:700;
+border-radius:5px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+background:#fff;
+}
+
+.btn-outline{
+background:transparent;
+border:2px solid #e3d48d;
+color:#e3d48d;
+}
+
+.btn-outline:hover{
+background:#e3d48d;
+color:#000;
+}
+
+/* =========================
+SECTIONS
+========================= */
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+font-size:2.7rem;
+font-family:'Playfair Display', serif;
+color:#e3d48d;
+margin-bottom:20px;
+text-align:center;
+}
+
+.section-subtitle{
+text-align:center;
+max-width:900px;
+margin:auto;
+margin-bottom:60px;
+color:#ccc;
+}
+
+/* =========================
+CARDS
+========================= */
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:35px;
+border:1px solid rgba(227,212,141,0.18);
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#e3d48d;
+}
+
+.card h3{
+color:#e3d48d;
+margin-bottom:15px;
+font-size:1.4rem;
+}
+
+/* =========================
+ABOUT
+========================= */
+
+.about-content{
+max-width:1100px;
+margin:auto;
+font-size:1.05rem;
+color:#ddd;
+}
+
+.about-content p{
+margin-bottom:25px;
+}
+
+/* =========================
+LEADERSHIP
+========================= */
+
+.leader-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.leader-card{
+background:#111;
+border-radius:12px;
+overflow:hidden;
+border:1px solid rgba(227,212,141,0.15);
+transition:0.3s;
+}
+
+.leader-card:hover{
+transform:translateY(-8px);
+border-color:#e3d48d;
+}
+
+.leader-image{
+height:280px;
+background:#222;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:3rem;
+color:#e3d48d;
+font-weight:700;
+}
+
+.leader-content{
+padding:25px;
+}
+
+.leader-content h3{
+color:#e3d48d;
+margin-bottom:8px;
+}
+
+.role{
+font-size:0.95rem;
+color:#aaa;
+margin-bottom:15px;
+}
+
+.bio{
+font-size:0.95rem;
+color:#ddd;
+}
+
+/* =========================
+MERCH
+========================= */
+
+.merch{
+text-align:center;
+}
+
+.merch-box{
+background:#111;
+padding:50px;
+border-radius:12px;
+border:1px solid rgba(227,212,141,0.2);
+max-width:900px;
+margin:auto;
+}
+
+.merch-box h3{
+color:#e3d48d;
+font-size:2rem;
+margin-bottom:20px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+background:#050505;
+padding:60px 8%;
+border-top:1px solid rgba(227,212,141,0.15);
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.footer-title{
+color:#e3d48d;
+margin-bottom:15px;
+font-size:1.2rem;
+}
+
+footer a{
+color:#ccc;
+text-decoration:none;
+display:block;
+margin-bottom:10px;
+}
+
+footer a:hover{
+color:#e3d48d;
+}
+
+.footer-bottom{
+margin-top:40px;
+text-align:center;
+color:#888;
+font-size:0.9rem;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:2.7rem;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+NAVIGATION
+========================= -->
+
+<nav>
+<div class="logo">Beta Phi Alumni Association</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#active">Get Active</a></li>
+<li><a href="#leadership">Leadership</a></li>
+<li><a href="#merchandise">Merchandise</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- =========================
+HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Beta Phi Alumni Association</h1>
+
+<p>
+Preserving Brotherhood, Leadership, Scholarship, and Service while supporting the brothers of Beta Phi Chapter and Dillard University.
+</p>
+
+<div class="hero-buttons">
+<a href="#active" class="btn">Become Active</a>
+<a href="#about" class="btn btn-outline">Explore Our Legacy</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+ABOUT
+========================= -->
+
+<section id="about">
+
+<h2 class="section-title">About Beta Phi</h2>
+
+<p class="section-subtitle">
+A legacy rooted in excellence since November 11, 1938.
+</p>
+
+<div class="about-content">
+
+<p>
+The Beta Phi Chapter of Alpha Phi Alpha Fraternity, Incorporated was chartered on November 11, 1938, on the campus of Dillard University in New Orleans, Louisiana by eight visionary young men dedicated to scholarship, brotherhood, leadership, and service.
+</p>
+
+<p>
+Since its inception, Beta Phi brothers have served in numerous leadership roles on campus and throughout Alpha Phi Alpha Fraternity, Inc., while also maintaining excellence academically and professionally.
+</p>
+
+<p>
+Beta Phi has produced leaders on the national, regional, district, and local levels of Alpha Phi Alpha Fraternity, Inc., including regional vice presidents, convention leaders, and the 34th General President, Brother Mark S. Tillman.
+</p>
+
+<p>
+The chapter has earned countless honors including:
+</p>
+
+<ul style="padding-left:25px; color:#ddd; margin-bottom:30px;">
+<li>1985 National Chapter of the Year</li>
+<li>2003 Southwestern Region Chapter of the Year</li>
+<li>National Highest GPA Chapter Award (2021)</li>
+<li>Multiple Louisiana District awards in scholarship and leadership</li>
+</ul>
+
+<p>
+At the 85th Anniversary celebration in 2023, the college and alumni brothers officially established the Beta Phi Alumni Association to continue strengthening the bond between alumni brothers, Beta Phi Chapter, and Dillard University.
+</p>
+
+</div>
+
+</section>
+
+<!-- =========================
+GET ACTIVE
+========================= -->
+
+<section id="active">
+
+<h2 class="section-title">Get Active</h2>
+
+<p class="section-subtitle">
+Support current Beta Phi brothers and Dillard University.
+</p>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Golden Brothers — $85</h3>
+<p>
+Members who have been in Alpha Phi Alpha Fraternity, Inc. for 50+ years.
+</p>
+</div>
+
+<div class="card">
+<h3>Young Brothers</h3>
+<p>
+Members who graduated from Dillard University within the last five years.
+</p>
+</div>
+
+<div class="card">
+<h3>Beta Phi Brothers — $19.38</h3>
+<p>
+Current college brothers of Beta Phi Chapter.
+</p>
+</div>
+
+<div class="card">
+<h3>Alumni Brothers — $138</h3>
+<p>
+All members who do not fall into Golden or Young Brother categories.
+</p>
+</div>
+
+</div>
+
+<div style="margin-top:60px; text-align:center;">
+
+<h3 style="color:#e3d48d; margin-bottom:20px;">Membership Payments</h3>
+
+<p style="margin-bottom:10px;">
+Cash App: <strong>$betaphianniversary</strong>
+</p>
+
+<p>
+Zelle: <strong>504-210-5122</strong>
+</p>
+
+<div class="hero-buttons" style="margin-top:35px;">
+<a href="#" class="btn">Membership Form</a>
+<a href="#" class="btn btn-outline">Member Directory</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+LEADERSHIP
+========================= -->
+
+<section id="leadership">
+
+<h2 class="section-title">Leadership</h2>
+
+<p class="section-subtitle">
+Dedicated brothers committed to leadership, scholarship, and service.
+</p>
+
+<div class="leader-grid">
+
+<div class="leader-card">
+<div class="leader-image">CL</div>
+
+<div class="leader-content">
+<h3>Bro. Charles M. Ladd, MBA</h3>
+<div class="role">Board Chair</div>
+
+<p class="bio">
+Experienced business development and marketing professional with 25+ years in the energy sector managing major commercial assets and revenue growth initiatives.
+</p>
+</div>
+</div>
+
+<div class="leader-card">
+<div class="leader-image">KS</div>
+
+<div class="leader-content">
+<h3>Bro. Kael Saloy</h3>
+<div class="role">Board Treasurer</div>
+
+<p class="bio">
+Chief Financial Officer of ReNew Schools and former Mister Dillard University (2007-2008). Active member of Sigma Lambda Chapter.
+</p>
+</div>
+</div>
+
+<div class="leader-card">
+<div class="leader-image">MB</div>
+
+<div class="leader-content">
+<h3>Bro. Malik B. Bartholomew</h3>
+<div class="role">Board Secretary</div>
+
+<p class="bio">
+Historian, photographer, archivist, and CEO of Know NOLA Tours, LLC specializing in tours, research, presentations, and historical consulting.
+</p>
+</div>
+</div>
+
+<div class="leader-card">
+<div class="leader-image">LM</div>
+
+<div class="leader-content">
+<h3>Bro. Lester J. McKee, Jr.</h3>
+<div class="role">Board Member – Golden Brother</div>
+
+<p class="bio">
+Educator, executive leader, and nonprofit strategist with decades of experience in education, equity, college readiness, and organizational leadership.
+</p>
+</div>
+</div>
+
+<div class="leader-card">
+<div class="leader-image">MB</div>
+
+<div class="leader-content">
+<h3>Bro. Marion B. Bracy</h3>
+<div class="role">Board Member</div>
+
+<p class="bio">
+Retired senior facilities executive from Dillard and Xavier Universities with decades of leadership in higher education, Alpha Phi Alpha, and community service.
+</p>
+</div>
+</div>
+
+<div class="leader-card">
+<div class="leader-image">SJ</div>
+
+<div class="leader-content">
+<h3>Bro. Dr. Steven B. Jubert, Jr.</h3>
+<div class="role">Board Member</div>
+
+<p class="bio">
+Associate Vice President at Widener University with more than 20 years of senior executive leadership in higher education.
+</p>
+</div>
+</div>
+
+<div class="leader-card">
+<div class="leader-image">MR</div>
+
+<div class="leader-content">
+<h3>Bro. Montae Richardson</h3>
+<div class="role">Board Member</div>
+
+<p class="bio">
+Senior IT Project Manager, former Mister Dillard University, and active member of Beta Lambda Chapter.
+</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+MERCHANDISE
+========================= -->
+
+<section id="merchandise" class="merch">
+
+<h2 class="section-title">Official Merchandise</h2>
+
+<p class="section-subtitle">
+Support Black-owned Greek apparel and commemorative collections.
+</p>
+
+<div class="merch-box">
+
+<h3>Pharaoh Collection</h3>
+
+<p style="margin-bottom:30px;">
+Official merchandise and premium apparel created by Brother Jermaine Jackson.
+</p>
+
+<a href="https://www.stdntunionhq.com/collections/pharaoh-collection" target="_blank" class="btn">
+Shop Collection
+</a>
+
+</div>
+
+</section>
+
+<!-- =========================
+CONTACT
+========================= -->
+
+<section id="contact">
+
+<h2 class="section-title">Get In Contact</h2>
+
+<div style="text-align:center; max-width:700px; margin:auto;">
+
+<p style="margin-bottom:15px;">
+Email:
+<br>
+<strong>betaphialumniassociation@gmail.com</strong>
+</p>
+
+<p style="margin-bottom:15px;">
+Instagram:
+<br>
+<a href="https://www.instagram.com/bpaa_1938/" target="_blank" style="color:#e3d48d;">
+@bpaa_1938
+</a>
+</p>
+
+<p>
+Facebook:
+<br>
+<a href="#" style="color:#e3d48d;">
+Coming Soon
+</a>
+</p>
+
+</div>
+
+</section>
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3 class="footer-title">Beta Phi Alumni Association</h3>
+<p>
+Preserving legacy, supporting brotherhood, and advancing excellence since 1938.
+</p>
+</div>
+
+<div>
+<h3 class="footer-title">Quick Links</h3>
+
+<a href="#about">About</a>
+<a href="#active">Get Active</a>
+<a href="#leadership">Leadership</a>
+<a href="#merchandise">Merchandise</a>
+
+</div>
+
+<div>
+<h3 class="footer-title">Connect</h3>
+
+<a href="https://www.instagram.com/bpaa_1938/" target="_blank">
+Instagram
+</a>
+
+<a href="#">
+Facebook
+</a>
+
+<a href="mailto:betaphialumniassociation@gmail.com">
+Email Us
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Beta Phi Alumni Association | Built in Brotherhood & Excellence
+</div>
+
+</footer>
+
+</body>
+</html>
