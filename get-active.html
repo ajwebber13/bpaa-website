@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Get Active | BPAA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* =========================
+GET ACTIVE PAGE
+========================= */
+
+.hero {
+  padding: 140px 8% 60px;
+  text-align: center;
+}
+
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.tier-card {
+  background: #111;
+  border: 1px solid rgba(227,212,141,0.15);
+  border-radius: 12px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.tier-card:hover {
+  transform: translateY(-6px);
+  border-color: #e3d48d;
+}
+
+.tier-title {
+  color: #e3d48d;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.section {
+  padding: 70px 8%;
+}
+
+.center {
+  text-align: center;
+}
+
+.pay-box {
+  background: #111;
+  border: 1px solid rgba(227,212,141,0.15);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.highlight {
+  color: #e3d48d;
+  font-weight: 600;
+}
+
+/* BUTTON OVERRIDE */
+.btn {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="logo">BPAA</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="get-active.html">Get Active</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="merchandise.html">Merch</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+<h1>Get Active</h1>
+
+<p style="margin-top:20px;">
+Support Beta Phi brothers and Dillard University through membership and engagement.
+</p>
+
+</div>
+
+<!-- MEMBERSHIP TIERS -->
+<section class="section">
+
+<h2 class="center">Membership Categories</h2>
+
+<div class="tier-grid">
+
+<div class="tier-card">
+<h3 class="tier-title">Golden Brothers</h3>
+<div class="price">$85</div>
+<p>Members with 50+ years in Alpha Phi Alpha Fraternity, Inc.</p>
+</div>
+
+<div class="tier-card">
+<h3 class="tier-title">Young Brothers</h3>
+<div class="price">Contact</div>
+<p>Graduates of Dillard University within the last 5 years.</p>
+</div>
+
+<div class="tier-card">
+<h3 class="tier-title">Beta Phi College Brothers</h3>
+<div class="price">$19.38</div>
+<p>Current undergraduate brothers of Beta Phi Chapter.</p>
+</div>
+
+<div class="tier-card">
+<h3 class="tier-title">Alumni Brothers</h3>
+<div class="price">$138</div>
+<p>All brothers who do not fall into Golden or Young categories.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PAYMENTS -->
+<section class="section">
+
+<h2 class="center">Membership Payments</h2>
+
+<div class="pay-box">
+
+<p><span class="highlight">Cash App:</span> $betaphianniversary</p>
+<p><span class="highlight">Zelle:</span> 504-210-5122</p>
+
+<div class="center" style="margin-top:25px;">
+<a class="btn" href="#">Pay Membership (Stripe / Future Upgrade)</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- FORMS -->
+<section class="section">
+
+<h2 class="center">Forms & Membership Updates</h2>
+
+<div class="pay-box">
+
+<p>
+Use the links below to update your membership information and access official BPAA documents.
+</p>
+
+<div class="center" style="margin-top:25px;">
+<a class="btn" href="#">Membership Update Form</a>
+<a class="btn btn-outline" href="#">Download Documents</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- MEMBER DIRECTORY -->
+<section class="section">
+
+<h2 class="center">Member Directory</h2>
+
+<div class="pay-box">
+
+<p>
+Access to the official Beta Phi Alumni Association member directory is restricted to active members.
+</p>
+
+<div class="center" style="margin-top:25px;">
+<a class="btn" href="#">Enter Directory</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Beta Phi Alumni Association</p>
+</footer>
+
+</body>
+</html>
