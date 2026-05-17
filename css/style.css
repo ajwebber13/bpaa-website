@@ -1,460 +1,151 @@
 /* =========================
-GLOBAL DESIGN SYSTEM
+PREMIUM DESIGN LAYER
 ========================= */
 
 :root{
-  --primary-gold:#c8a96b;
+  --gold:#c8a96b;
   --dark:#0f0f0f;
-  --light-dark:#181818;
-  --white:#ffffff;
+  --soft:#181818;
+  --text:#f5f5f5;
+  --muted:#b8b8b8;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
+/* GLOBAL TYPOGRAPHY */
 body{
   font-family:'Montserrat',sans-serif;
   background:var(--dark);
-  color:var(--white);
-  overflow-x:hidden;
+  color:var(--text);
+  letter-spacing:.2px;
+  -webkit-font-smoothing:antialiased;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4{
   font-family:'Playfair Display',serif;
+  letter-spacing:.5px;
 }
 
-.section-padding{
-  padding:100px 0;
-}
-
-/* =========================
-TOP BAR
-========================= */
-
-.top-bar{
-  background:#000;
-  font-size:.9rem;
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.top-bar a{
-  color:#fff;
-  margin-left:15px;
-  transition:.3s;
-}
-
-.top-bar a:hover{
-  color:var(--primary-gold);
-}
-
-/* =========================
-NAVBAR
-========================= */
-
+/* PREMIUM NAV */
 .navbar{
   background:rgba(0,0,0,.75);
-  backdrop-filter:blur(10px);
-}
-
-.navbar-brand{
-  color:#fff !important;
-  font-weight:700;
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.05);
 }
 
 .nav-link{
-  color:#fff !important;
-  margin:0 10px;
-  transition:.3s;
+  position:relative;
+  transition:.3s ease;
 }
 
-.nav-link:hover{
-  color:var(--primary-gold) !important;
+.nav-link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-3px;
+  width:0%;
+  height:2px;
+  background:var(--gold);
+  transition:.3s ease;
 }
 
-/* =========================
-BUTTONS
-========================= */
+.nav-link:hover::after{
+  width:100%;
+}
 
+/* BUTTONS */
 .btn-gold{
-  background:var(--primary-gold);
+  background:var(--gold);
   color:#000;
   border-radius:50px;
-  padding:10px 25px;
+  padding:12px 28px;
   font-weight:600;
-  border:none;
-  transition:.3s;
+  transition:.3s ease;
+  box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
 .btn-gold:hover{
+  transform:translateY(-2px);
   background:#fff;
-  color:#000;
 }
 
-/* =========================
-HERO
-========================= */
-
-.hero{
-  height:100vh;
-}
-
-.swiper, .swiper-slide{
-  height:100%;
-}
-
-.hero-slide{
-  background-size:cover;
-  background-position:center;
-  position:relative;
-}
-
-.hero-slide::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.65);
-}
-
-.hero-content{
-  position:relative;
-  z-index:2;
-  height:100%;
+/* HERO PREMIUM */
+.page-hero{
+  min-height:45vh;
   display:flex;
   align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:linear-gradient(120deg, rgba(0,0,0,.85), rgba(0,0,0,.6)),
+  url('../images/hero1.jpg') center/cover;
 }
 
-.hero-content h1{
-  font-size:4rem;
-  margin-bottom:20px;
+/* SECTION SPACING (IMPORTANT) */
+.section-padding{
+  padding:110px 0;
 }
 
-.hero-content p{
-  max-width:700px;
-  font-size:1.1rem;
-}
-
-/* =========================
-ABOUT / IMAGE
-========================= */
-
-.about-image img{
-  width:100%;
-  border-radius:15px;
-}
-
-/* =========================
-STATS
-========================= */
-
-.stats{
-  background:#141414;
-}
-
-.stats h2{
-  color:var(--primary-gold);
-  font-size:3rem;
-}
-
-/* =========================
-LEADERSHIP CARDS
-========================= */
-
-.leader-link{
-  text-decoration:none;
-  color:#fff;
-  display:block;
-}
-
+/* LEADERSHIP CARDS (PREMIUM FEEL) */
 .leader-card{
-  background:var(--light-dark);
-  border-radius:15px;
+  background:linear-gradient(145deg, #1a1a1a, #111);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
   overflow:hidden;
-  transition:.4s ease;
-  border:1px solid rgba(255,255,255,.05);
+  transition:all .35s ease;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
 }
 
 .leader-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 15px 40px rgba(0,0,0,.4);
+  transform:translateY(-10px);
+  box-shadow:0 25px 60px rgba(0,0,0,.55);
 }
 
 .leader-card img{
   width:100%;
-  height:350px;
+  height:360px;
   object-fit:cover;
+  transition:transform .5s ease;
 }
 
-/* =========================
-EVENTS
-========================= */
-
-.event-card{
-  background:var(--light-dark);
-  border-radius:15px;
-  overflow:hidden;
+.leader-card:hover img{
+  transform:scale(1.05);
 }
 
-.event-card img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-}
-
-/* =========================
-FOOTER
-========================= */
-
-footer{
-  background:#000;
-  padding:60px 0;
-}
-
-.footer-links a{
-  display:block;
-  color:#ccc;
-  margin-bottom:8px;
-  text-decoration:none;
-}
-
-.footer-links a:hover{
-  color:var(--primary-gold);
-}
-
-.bottom-footer{
-  border-top:1px solid rgba(255,255,255,.1);
-  margin-top:40px;
-  padding-top:20px;
-  text-align:center;
-  color:#888;
-}
-
-/* =========================
-RESPONSIVE
-========================= */
-
-@media(max-width:768px){
-  .hero-content h1{
-    font-size:2.5rem;
-  }
-}
-
-/* =========================
-LUXURY LEADERSHIP UPGRADE
-========================= */
-
-.leader-featured img{
-  width:100%;
-  border-radius:20px;
-  height:500px;
-  object-fit:cover;
-  box-shadow:0 25px 80px rgba(0,0,0,.6);
-}
-
-.premium-card{
-  background:linear-gradient(145deg, #161616, #0e0e0e);
-  border:1px solid rgba(200,169,107,.15);
+/* PROFILE PAGE */
+.profile-img{
   border-radius:18px;
-  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,.5);
   transition:.4s ease;
-  position:relative;
 }
 
-.premium-card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 25px 60px rgba(0,0,0,.6);
-  border:1px solid rgba(200,169,107,.35);
+.profile-img:hover{
+  transform:scale(1.02);
 }
 
-.leader-img-wrap{
-  overflow:hidden;
-}
-
-.leader-img-wrap img{
-  width:100%;
-  height:320px;
-  object-fit:cover;
-  transition:.5s ease;
-}
-
-.premium-card:hover img{
-  transform:scale(1.05);
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-/* smoother rendering for luxury feel */
-body{
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
-
-.reveal{
-  opacity:0;
-  transform:translateY(40px);
-  transition:all 0.8s ease;
-}
-
-.reveal.active{
-  opacity:1;
-  transform:translateY(0);
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-/* smoother rendering for luxury feel */
-body{
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
-
-.reveal{
-  opacity:0;
-  transform:translateY(40px);
-  transition:all 0.8s ease;
-}
-
-.reveal.active{
-  opacity:1;
-  transform:translateY(0);
-}
-
-<script>
-const reveals = document.querySelectorAll(".reveal");
-
-function revealOnScroll(){
-  for(let i = 0; i < reveals.length; i++){
-    let windowHeight = window.innerHeight;
-    let elementTop = reveals[i].getBoundingClientRect().top;
-    let elementVisible = 120;
-
-    if(elementTop < windowHeight - elementVisible){
-      reveals[i].classList.add("active");
-    }
-  }
-}
-
-window.addEventListener("scroll", revealOnScroll);
-</script>
-
-.leader-featured{
-  position:relative;
-  border-radius:20px;
-  overflow:hidden;
-}
-
-.leader-featured img{
-  width:100%;
-  height:520px;
-  object-fit:cover;
-  transition:0.6s ease;
-}
-
-.leader-featured::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.6));
-  z-index:1;
-}
-
-.leader-featured:hover img{
-  transform:scale(1.05);
-}
-
-<div class="executive-sidebar">
-  <h5>Executive Board</h5>
-  <a href="#chair">Board Chair</a>
-  <a href="#treasurer">Treasurer</a>
-  <a href="#secretary">Secretary</a>
-  <a href="#members">Board Members</a>
-</div>
-
-.executive-sidebar{
-  position:sticky;
-  top:120px;
-  background:#121212;
-  padding:20px;
-  border-radius:15px;
-  border:1px solid rgba(255,255,255,.05);
-}
-
-.executive-sidebar h5{
-  margin-bottom:15px;
-  color:var(--primary-gold);
-}
-
-.executive-sidebar a{
-  display:block;
-  color:#ccc;
+.back-link{
+  display:inline-block;
+  margin-bottom:25px;
+  color:var(--gold);
   text-decoration:none;
-  margin-bottom:10px;
+  font-weight:500;
   transition:.3s;
 }
 
-.executive-sidebar a:hover{
+.back-link:hover{
   color:#fff;
-  padding-left:5px;
+  transform:translateX(-5px);
 }
 
-<div id="bioModal" class="bio-modal">
-  <div class="bio-content">
-    <span class="close">&times;</span>
-    <h2 id="bioName"></h2>
-    <p id="bioText"></p>
-  </div>
-</div>
-
-.bio-modal{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.8);
-  justify-content:center;
-  align-items:center;
-  z-index:9999;
+/* FADE IN ANIMATION */
+.fade-up{
+  animation:fadeUp .8s ease forwards;
 }
 
-.bio-content{
-  background:#181818;
-  padding:40px;
-  max-width:600px;
-  border-radius:15px;
-  border:1px solid rgba(200,169,107,.2);
-}
-
-<script>
-const modal = document.getElementById("bioModal");
-const closeBtn = document.querySelector(".bio-modal .close");
-
-function openBio(name, text){
-  document.getElementById("bioName").innerText = name;
-  document.getElementById("bioText").innerText = text;
-  modal.style.display = "flex";
-}
-
-closeBtn.onclick = () => modal.style.display = "none";
-
-window.onclick = (e) => {
-  if(e.target == modal){
-    modal.style.display = "none";
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(25px);
   }
-};
-</script>
-
-.leader-card,
-.premium-card{
-  cursor:pointer;
-  transition:0.4s ease;
-}
-
-.leader-card:hover,
-.premium-card:hover{
-  transform:translateY(-10px) scale(1.01);
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
