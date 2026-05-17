@@ -1,258 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Leadership | BPAA</title>
-
 <!-- =========================
-SEO META TAGS
+LEADERSHIP GRID (CLICKABLE)
 ========================= -->
-<meta name="description" content="Meet the leadership of the Beta Phi Alumni Association, including board officers and members guiding the mission of Brotherhood, Service, and Excellence since 1938.">
 
-<meta name="keywords" content="Beta Phi leadership, Alpha Phi Alpha board, Dillard alumni leadership, BPAA executive board">
+<section class="section-padding">
+  <div class="container text-center mb-5">
+    <h2>Leadership</h2>
+    <p>Click a brother to view full biography</p>
+  </div>
 
-<meta name="author" content="Beta Phi Alumni Association">
+  <div class="container">
+    <div class="row g-4">
 
-<meta property="og:title" content="Leadership | Beta Phi Alumni Association">
-<meta property="og:description" content="Executive leadership team guiding the Beta Phi Alumni Association.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/hero/bpaa-hero.jpg">
+      <!-- Marion Bracy -->
+      <div class="col-lg-4 col-md-6">
+        <a href="br-marion-bracy.html" class="text-decoration-none text-white">
+          <div class="leader-card">
+            <img src="images/bracy.jpg" alt="Bro. Marion B. Bracy">
+            <div class="p-3">
+              <h4>Bro. Marion B. Bracy</h4>
+              <p class="text-warning">Retired Senior Facility Executive</p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-<meta name="twitter:card" content="summary_large_image">
+      <!-- Steven Jubert -->
+      <div class="col-lg-4 col-md-6">
+        <a href="dr-steven-jubert.html" class="text-decoration-none text-white">
+          <div class="leader-card">
+            <img src="images/jubert.jpg" alt="Dr. Steven B. Jubert Jr">
+            <div class="p-3">
+              <h4>Dr. Steven B. Jubert Jr.</h4>
+              <p class="text-warning">Higher Education Executive</p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-<!-- =========================
-FONTS + STYLES
-========================= -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+      <!-- Charles Ladd -->
+      <div class="col-lg-4 col-md-6">
+        <a href="charles-ladd.html" class="text-decoration-none text-white">
+          <div class="leader-card">
+            <img src="images/ladd.jpg" alt="Bro. Charles M. Ladd">
+            <div class="p-3">
+              <h4>Bro. Charles M. Ladd</h4>
+              <p class="text-warning">MBA | Energy Executive</p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-<link rel="icon" type="image/png" href="images/favicon.png">
+      <!-- Lester McKee -->
+      <div class="col-lg-4 col-md-6">
+        <a href="lester-mckee.html" class="text-decoration-none text-white">
+          <div class="leader-card">
+            <img src="images/mckee.jpg" alt="Bro. Lester J. McKee Jr">
+            <div class="p-3">
+              <h4>Bro. Lester J. McKee Jr.</h4>
+              <p class="text-warning">Education Leader</p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-<link rel="stylesheet" href="css/style.css">
+      <!-- Kael Saloy -->
+      <div class="col-lg-4 col-md-6">
+        <a href="kael-saloy.html" class="text-decoration-none text-white">
+          <div class="leader-card">
+            <img src="images/saloy.jpg" alt="Bro. Kael Saloy">
+            <div class="p-3">
+              <h4>Bro. Kael Saloy</h4>
+              <p class="text-warning">CFO | Education Sector</p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-<!-- =========================
-PAGE STYLES
-========================= -->
-<style>
+      <!-- Malik Bartholomew -->
+      <div class="col-lg-4 col-md-6">
+        <a href="malik-bartholomew.html" class="text-decoration-none text-white">
+          <div class="leader-card">
+            <img src="images/bartholomew.jpg" alt="Bro. Malik B. Bartholomew">
+            <div class="p-3">
+              <h4>Bro. Malik B. Bartholomew</h4>
+              <p class="text-warning">Historian | Entrepreneur</p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-/* HERO */
-.hero {
-  padding: 140px 8% 60px;
-  text-align: center;
-}
+      <!-- Montae Richardson -->
+      <div class="col-lg-4 col-md-6">
+        <a href="montae-richardson.html" class="text-decoration-none text-white">
+          <div class="leader-card">
+            <img src="images/richardson.jpg" alt="Bro. Montae Richardson">
+            <div class="p-3">
+              <h4>Bro. Montae Richardson</h4>
+              <p class="text-warning">IT Project Manager</p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-/* BOARD */
-.board-section {
-  padding: 60px 8%;
-}
-
-.board-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.board-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-/* CARDS */
-.member-card {
-  background: #111;
-  border: 1px solid rgba(227,212,141,0.15);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.member-card:hover {
-  transform: translateY(-6px);
-  border-color: #e3d48d;
-}
-
-/* PHOTO PLACEHOLDER */
-.photo {
-  height: 240px;
-  background: #222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #e3d48d;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-/* INFO */
-.member-info {
-  padding: 20px;
-}
-
-.member-info h3 {
-  margin-bottom: 5px;
-}
-
-.role {
-  color: #bdbdbd;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-}
-
-.bio {
-  font-size: 0.9rem;
-  color: #ccc;
-}
-
-/* DIVIDER */
-.divider {
-  height: 1px;
-  background: rgba(227,212,141,0.2);
-  margin: 60px 0;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<!-- NAV -->
-<nav>
-<div class="logo">BPAA</div>
-
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-<ul id="navLinks">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="get-active.html">Get Active</a></li>
-<li><a href="leadership.html">Leadership</a></li>
-<li><a href="merchandise.html">Merch</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-
-<!-- HERO -->
-<div class="hero">
-<div class="container">
-
-<h1>Leadership</h1>
-<p style="margin-top:20px;">
-Guiding the vision, legacy, and mission of the Beta Phi Alumni Association.
-</p>
-
-</div>
-</div>
-
-<!-- EXECUTIVE BOARD -->
-<section class="board-section">
-
-<h2 class="board-title">Executive Board</h2>
-
-<div class="board-grid">
-
-<div class="member-card">
-<div class="photo">CL</div>
-<div class="member-info">
-<h3>Bro. Charles M. Ladd</h3>
-<div class="role">Board Chair</div>
-<p class="bio">
-Senior business development executive in the energy sector with 25+ years of leadership experience managing large-scale commercial assets.
-</p>
-</div>
-</div>
-
-<div class="member-card">
-<div class="photo">KS</div>
-<div class="member-info">
-<h3>Bro. Kael Saloy</h3>
-<div class="role">Treasurer</div>
-<p class="bio">
-CFO of ReNew Schools and former Mister Dillard University. Finance and education leadership professional.
-</p>
-</div>
-</div>
-
-<div class="member-card">
-<div class="photo">MB</div>
-<div class="member-info">
-<h3>Bro. Malik B. Bartholomew</h3>
-<div class="role">Secretary</div>
-<p class="bio">
-Historian, archivist, photographer, and CEO of Know NOLA Tours LLC specializing in cultural and historical preservation.
-</p>
-</div>
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
-
-<div class="divider"></div>
-
-<!-- BOARD MEMBERS -->
-<section class="board-section">
-
-<h2 class="board-title">Board Members</h2>
-
-<div class="board-grid">
-
-<div class="member-card">
-<div class="photo">MB</div>
-<div class="member-info">
-<h3>Bro. Marion B. Bracy</h3>
-<div class="role">Board Member</div>
-<p class="bio">
-Retired executive leader in higher education with decades of service at Dillard University and Xavier University.
-</p>
-</div>
-</div>
-
-<div class="member-card">
-<div class="photo">LM</div>
-<div class="member-info">
-<h3>Bro. Lester J. McKee Jr.</h3>
-<div class="role">Board Member</div>
-<p class="bio">
-Education and nonprofit executive with national leadership experience in equity, access, and student success initiatives.
-</p>
-</div>
-</div>
-
-<div class="member-card">
-<div class="photo">SJ</div>
-<div class="member-info">
-<h3>Bro. Dr. Steven B. Jubert Jr.</h3>
-<div class="role">Board Member</div>
-<p class="bio">
-Higher education executive and Associate Vice President at Widener University with 20+ years of leadership experience.
-</p>
-</div>
-</div>
-
-<div class="member-card">
-<div class="photo">MR</div>
-<div class="member-info">
-<h3>Bro. Montae Richardson</h3>
-<div class="role">Board Member</div>
-<p class="bio">
-Senior IT Project Manager and former Mister Dillard University with experience in technology and organizational leadership.
-</p>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-<footer>
-<p>© 2026 Beta Phi Alumni Association</p>
-</footer>
-
-<!-- JS -->
-<script src="js/script.js"></script>
-
-</body>
-</html>
