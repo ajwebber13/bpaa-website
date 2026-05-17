@@ -303,3 +303,158 @@ body{
   opacity:1;
   transform:translateY(0);
 }
+
+html{
+  scroll-behavior:smooth;
+}
+
+/* smoother rendering for luxury feel */
+body{
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 0.8s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll(){
+  for(let i = 0; i < reveals.length; i++){
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 120;
+
+    if(elementTop < windowHeight - elementVisible){
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealOnScroll);
+</script>
+
+.leader-featured{
+  position:relative;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.leader-featured img{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  transition:0.6s ease;
+}
+
+.leader-featured::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.6));
+  z-index:1;
+}
+
+.leader-featured:hover img{
+  transform:scale(1.05);
+}
+
+<div class="executive-sidebar">
+  <h5>Executive Board</h5>
+  <a href="#chair">Board Chair</a>
+  <a href="#treasurer">Treasurer</a>
+  <a href="#secretary">Secretary</a>
+  <a href="#members">Board Members</a>
+</div>
+
+.executive-sidebar{
+  position:sticky;
+  top:120px;
+  background:#121212;
+  padding:20px;
+  border-radius:15px;
+  border:1px solid rgba(255,255,255,.05);
+}
+
+.executive-sidebar h5{
+  margin-bottom:15px;
+  color:var(--primary-gold);
+}
+
+.executive-sidebar a{
+  display:block;
+  color:#ccc;
+  text-decoration:none;
+  margin-bottom:10px;
+  transition:.3s;
+}
+
+.executive-sidebar a:hover{
+  color:#fff;
+  padding-left:5px;
+}
+
+<div id="bioModal" class="bio-modal">
+  <div class="bio-content">
+    <span class="close">&times;</span>
+    <h2 id="bioName"></h2>
+    <p id="bioText"></p>
+  </div>
+</div>
+
+.bio-modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.8);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.bio-content{
+  background:#181818;
+  padding:40px;
+  max-width:600px;
+  border-radius:15px;
+  border:1px solid rgba(200,169,107,.2);
+}
+
+<script>
+const modal = document.getElementById("bioModal");
+const closeBtn = document.querySelector(".bio-modal .close");
+
+function openBio(name, text){
+  document.getElementById("bioName").innerText = name;
+  document.getElementById("bioText").innerText = text;
+  modal.style.display = "flex";
+}
+
+closeBtn.onclick = () => modal.style.display = "none";
+
+window.onclick = (e) => {
+  if(e.target == modal){
+    modal.style.display = "none";
+  }
+};
+</script>
+
+.leader-card,
+.premium-card{
+  cursor:pointer;
+  transition:0.4s ease;
+}
+
+.leader-card:hover,
+.premium-card:hover{
+  transform:translateY(-10px) scale(1.01);
+}
