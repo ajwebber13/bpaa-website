@@ -27,6 +27,7 @@ body{
   background:var(--dark);
   color:var(--text);
   overflow-x:hidden;
+  line-height:1.6;
 }
 
 /* TYPOGRAPHY */
@@ -34,12 +35,15 @@ h1,h2,h3,h4,h5{
   font-family:'Playfair Display',serif;
 }
 
-/* SECTIONS */
+/* SECTION SYSTEM */
 .section-padding{
   padding:110px 0;
 }
 
-/* TOP BAR */
+/* =========================
+TOP BAR
+========================= */
+
 .top-bar{
   background:#000;
   font-size:.9rem;
@@ -50,13 +54,17 @@ h1,h2,h3,h4,h5{
   color:#fff;
   margin-left:15px;
   text-decoration:none;
+  transition:.25s ease;
 }
 
 .top-bar a:hover{
   color:var(--gold);
 }
 
-/* NAVBAR */
+/* =========================
+NAVBAR
+========================= */
+
 .navbar{
   background:rgba(0,0,0,.75);
   backdrop-filter:blur(14px);
@@ -71,13 +79,17 @@ h1,h2,h3,h4,h5{
 .nav-link{
   color:#fff !important;
   margin:0 10px;
+  transition:.25s ease;
 }
 
 .nav-link:hover{
   color:var(--gold) !important;
 }
 
-/* HERO */
+/* =========================
+HERO
+========================= */
+
 .hero{
   height:100vh;
 }
@@ -89,11 +101,16 @@ h1,h2,h3,h4,h5{
   height:100%;
 }
 
+/* SINGLE CLEAN OVERLAY (FIXED) */
 .hero-slide::before{
   content:"";
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,.65);
+  background:linear-gradient(
+    to right,
+    rgba(0,0,0,.88),
+    rgba(0,0,0,.35)
+  );
 }
 
 .hero-content{
@@ -113,16 +130,52 @@ h1,h2,h3,h4,h5{
   color:var(--muted);
 }
 
-/* STATS SECTION */
+/* =========================
+BUTTON SYSTEM
+========================= */
+
+.btn-gold{
+  background:var(--gold);
+  color:#0f0f0f;
+  padding:10px 22px;
+  border-radius:30px;
+  font-weight:600;
+  transition:.3s ease;
+  display:inline-block;
+  text-decoration:none;
+  border:none;
+}
+
+.btn-gold:hover{
+  background:#a8884f;
+  color:#fff;
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+/* =========================
+STATS SECTION
+========================= */
+
 .stats{
   background:#141414;
 }
 
 .stats h2{
   color:var(--gold);
+  font-size:2.8rem;
+  letter-spacing:1px;
+  font-variant-numeric:tabular-nums;
 }
 
-/* LEADER CARDS */
+.stats p{
+  line-height:1.7;
+}
+
+/* =========================
+LEADER CARDS
+========================= */
+
 .leader-card{
   background:var(--soft);
   border-radius:18px;
@@ -141,15 +194,34 @@ h1,h2,h3,h4,h5{
   object-fit:cover;
 }
 
-/* FOOTER */
+/* =========================
+FOOTER
+========================= */
+
 footer{
   background:#000;
   padding:60px 0;
+}
+
+/* =========================
+UTILITIES
+========================= */
+
+.text-gold{
+  color:var(--gold) !important;
+}
+
+.soft-shadow{
+  box-shadow:0 12px 30px rgba(0,0,0,.25);
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
   .hero-content h1{
     font-size:2.5rem;
+  }
+
+  .section-padding{
+    padding:80px 0;
   }
 }
