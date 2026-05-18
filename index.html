@@ -19,9 +19,9 @@
   <div class="container d-flex justify-content-between align-items-center">
     <div>Beta Phi Alumni Association | New Orleans, Louisiana</div>
     <div class="top-social">
-      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
 </div>
@@ -31,9 +31,7 @@
   <div class="container">
     <a class="navbar-brand" href="index.html">BETA PHI ALUMNI ASSOCIATION</a>
 
-    <button class="navbar-toggler" type="button"
-      data-bs-toggle="collapse" data-bs-target="#nav"
-      aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -97,14 +95,12 @@
   <div class="container">
     <div class="row align-items-center g-5">
       <div class="col-lg-6">
-        <div class="about-image">
-          <img src="images/about.jpg" alt="Beta Phi Alumni Association members">
-        </div>
+        <img src="images/about.jpg" class="img-fluid" alt="">
       </div>
 
       <div class="col-lg-6">
-        <h2 class="mb-4">Preserving Legacy Through Brotherhood and Service</h2>
-        <p class="mb-4">
+        <h2>Preserving Legacy Through Brotherhood and Service</h2>
+        <p>
           The Beta Phi Alumni Association pledges itself to the highest form of brotherhood and dedicates this association to leadership, mentorship, advocacy, and service throughout our communities.
         </p>
         <a href="#" class="btn btn-gold">Learn More</a>
@@ -113,53 +109,37 @@
   </div>
 </section>
 
-<!-- 🔥 BROTHERHOOD SPOTLIGHT (NEW SECTION ADDED HERE) -->
+<!-- BROTHERHOOD -->
 <section class="brotherhood section-padding">
+  <div class="container text-center mb-5">
+    <h2>Brotherhood Spotlight</h2>
+    <p>Honoring the brothers who continue to lead, serve, and preserve our legacy.</p>
+  </div>
+
   <div class="container">
-
-    <div class="text-center mb-5">
-      <h2>Brotherhood Spotlight</h2>
-      <p>Honoring the brothers who continue to lead, serve, and preserve our legacy.</p>
-    </div>
-
     <div class="row g-4">
 
-      <!-- CARD 1 -->
       <div class="col-md-4">
         <div class="brother-card">
-          <img src="images/brother1.jpg" alt="Brother Spotlight">
-          <div class="brother-content">
-            <h3>Marion B. Bracy</h3>
-            <p class="role">Senior Facility Executive</p>
-            <p class="quote">“Service is not what we do, it is who we are.”</p>
-            <a href="#" class="btn btn-gold">View Story</a>
-          </div>
+          <img src="images/brother1.jpg">
+          <h3>Mark S. Tillman</h3>
+          <p>34th General President</p>
         </div>
       </div>
 
-      <!-- CARD 2 -->
       <div class="col-md-4">
         <div class="brother-card">
-          <img src="images/brother2.jpg" alt="Brother Spotlight">
-          <div class="brother-content">
-            <h3>James L. Carter</h3>
-            <p class="role">Community Advocate</p>
-            <p class="quote">“Brotherhood builds what the world cannot break.”</p>
-            <a href="#" class="btn btn-gold">View Story</a>
-          </div>
+          <img src="images/brother2.jpg">
+          <h3>Dr. Jericho Brown</h3>
+          <p>Educator</p>
         </div>
       </div>
 
-      <!-- CARD 3 -->
       <div class="col-md-4">
         <div class="brother-card">
-          <img src="images/brother3.jpg" alt="Brother Spotlight">
-          <div class="brother-content">
-            <h3>Anthony R. Douglas</h3>
-            <p class="role">Educator & Mentor</p>
-            <p class="quote">“We lead by lifting others.”</p>
-            <a href="#" class="btn btn-gold">View Story</a>
-          </div>
+          <img src="images/brother3.jpg">
+          <h3>Anthony R. Douglas</h3>
+          <p>Educator & Mentor</p>
         </div>
       </div>
 
@@ -167,126 +147,187 @@
   </div>
 </section>
 
-<!-- STATS -->
-<section class="stats section-padding">
+<!-- BOARD -->
+<section class="board section-padding">
+  <div class="container text-center mb-5">
+    <h2>Board of Directors</h2>
+    <p>Guiding the mission, vision, and legacy of the Beta Phi Alumni Association.</p>
+  </div>
+
   <div class="container">
-    <div class="row text-center g-4">
+    <div class="row g-4">
 
-      <div class="col-md-3">
-        <h2 class="count" data-target="88">88+</h2>
-        <p>Years of Service</p>
+      <div class="col-md-4">
+        <div class="board-card">
+          <img src="images/board1.jpg">
+          <h3>Charles M. Ladd</h3>
+          <p>Board Chairman</p>
+          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#board1">Full Bio</button>
+        </div>
       </div>
 
-      <div class="col-md-3">
-        <h2 class="count" data-target="1938">1938+</h2>
-        <p>Community Service</p>
+      <div class="col-md-4">
+        <div class="board-card">
+          <img src="images/board2.jpg">
+          <h3>Kael Saloy</h3>
+          <p>Board Treasurer</p>
+          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#board2">Full Bio</button>
+        </div>
       </div>
 
-      <div class="col-md-3">
-        <h2 class="count" data-target="10">10+</h2>
-        <p>Scholarships</p>
+      <div class="col-md-4">
+        <div class="board-card">
+          <img src="images/board3.jpg">
+          <h3>Malik Bartholomew</h3>
+          <p>Board Secretary</p>
+          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#board3">Full Bio</button>
+        </div>
       </div>
 
-      <div class="col-md-3">
-        <h2 class="count" data-target="138">138+</h2>
-        <p>Active Alumni</p>
+      <div class="col-md-4">
+        <div class="board-card">
+          <img src="images/board4.jpg">
+          <h3>Lester J. McKee</h3>
+          <p>Board Member</p>
+          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#board4">Full Bio</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="board-card">
+          <img src="images/board5.jpg">
+          <h3>Marion B. Bracy</h3>
+          <p>Board Member</p>
+          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#board5">Full Bio</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="board-card">
+          <img src="images/board6.jpg">
+          <h3>Steven B. Jubert, Ed.D</h3>
+          <p>Board Member</p>
+          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#board6">Full Bio</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="board-card">
+          <img src="images/board7.jpg">
+          <h3>Montae Richardson</h3>
+          <p>Board Member</p>
+          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#board7">Full Bio</button>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 mb-4">
-        <h3>Beta Phi Alumni Association</h3>
-        <p>Building legacy through brotherhood and service.</p>
-      </div>
+<!-- MODALS -->
 
-      <div class="col-lg-2 mb-4">
-        <h5>Links</h5>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="leadership.html">Leadership</a>
-          <a href="#">Events</a>
-        </div>
+<div class="modal fade" id="board1" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5>Charles M. Ladd</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
-
-      <div class="col-lg-3 mb-4">
-        <h5>Contact</h5>
-        <p>New Orleans, LA</p>
-        <p>info@betaphialumni.org</p>
+      <div class="modal-body">
+        <p>Seasoned executive in energy sector with 25+ years experience...</p>
       </div>
-
-      <div class="col-lg-3 mb-4">
-        <h5>Follow</h5>
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f me-3"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-
-    <div class="bottom-footer">
-      © 2026 Beta Phi Alumni Association
     </div>
   </div>
-</footer>
+</div>
+
+<div class="modal fade" id="board2" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5>Kael Saloy</h5>
+        <div class="modal-body">
+          <p>CFO of ReNew Schools and finance leader...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="board3" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5>Malik B. Bartholomew</h5>
+      </div>
+      <div class="modal-body">
+        <p>Historian, archivist, entrepreneur...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="board4" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5>Lester J. McKee</h5>
+      </div>
+      <div class="modal-body">
+        <p>Veteran educator and academic leader...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="board5" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5>Marion B. Bracy</h5>
+      </div>
+      <div class="modal-body">
+        <p>Full detailed leadership and career bio included...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="board6" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5>Steven B. Jubert</h5>
+      </div>
+      <div class="modal-body">
+        <p>Higher education executive...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="board7" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5>Montae Richardson</h5>
+      </div>
+      <div class="modal-body">
+        <p>IT project manager and leader...</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-  const swiper = new Swiper(".heroSwiper", {
-    loop: true,
-    effect: "fade",
-    fadeEffect: { crossFade: true },
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    }
-  });
-</script>
-
-<!-- COUNT UP SCRIPT -->
-<script>
-function animateCount(el, target, duration = 1800) {
-  let start = 0;
-  let startTime = null;
-
-  function update(timestamp) {
-    if (!startTime) startTime = timestamp;
-    const progress = timestamp - startTime;
-
-    const value = Math.min(
-      Math.floor((progress / duration) * target),
-      target
-    );
-
-    el.textContent = value.toLocaleString();
-
-    if (progress < duration) {
-      requestAnimationFrame(update);
-    }
-  }
-
-  requestAnimationFrame(update);
-}
-
-const observer = new IntersectionObserver((entries, obs) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      document.querySelectorAll(".count").forEach(el => {
-        const target = parseInt(el.getAttribute("data-target"));
-        animateCount(el, target);
-      });
-      obs.disconnect();
-    }
-  });
-}, { threshold: 0.5 });
-
-observer.observe(document.querySelector(".stats"));
+const swiper = new Swiper(".heroSwiper", {
+  loop: true,
+  effect: "fade",
+  autoplay: { delay: 5000 }
+});
 </script>
 
 </body>
