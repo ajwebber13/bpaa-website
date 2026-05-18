@@ -4,104 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Brother Marion B. Bracy | Leadership</title>
+<title>Brother Marion B. Bracy | Beta Phi Alumni Association</title>
 
-<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet"/>
-
-<style>
-
-:root{
-  --primary-gold:#c8a96b;
-  --dark:#0f0f0f;
-  --light-dark:#181818;
-  --white:#ffffff;
-}
-
-body{
-  font-family:'Montserrat',sans-serif;
-  background:var(--dark);
-  color:var(--white);
-}
-
-/* NAVBAR */
-.navbar{
-  background:#000;
-}
-
-.navbar-brand,
-.nav-link{
-  color:#fff !important;
-}
-
-.nav-link:hover{
-  color:var(--primary-gold) !important;
-}
-
-/* HERO */
-.page-hero{
-  height:50vh;
-  background:
-  linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
-  url('images/leader5.jpg') center/cover;
-  display:flex;
-  align-items:center;
-  text-align:center;
-}
-
-.page-hero h1{
-  font-family:'Playfair Display',serif;
-  font-size:3.2rem;
-}
-
-.page-hero p{
-  color:#ccc;
-}
-
-/* CONTENT */
-.section-padding{
-  padding:80px 0;
-}
-
-.leader-img{
-  width:100%;
-  border-radius:15px;
-}
-
-h2{
-  font-family:'Playfair Display',serif;
-  color:var(--primary-gold);
-  margin-bottom:20px;
-}
-
-/* BACK LINK */
-.back-link{
-  display:inline-block;
-  margin-bottom:20px;
-  color:var(--primary-gold);
-  text-decoration:none;
-}
-
-.back-link:hover{
-  color:#fff;
-}
-
-/* FOOTER */
-footer{
-  background:#000;
-  padding:40px 0;
-  margin-top:60px;
-  text-align:center;
-  color:#888;
-}
-
-</style>
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
@@ -119,42 +26,32 @@ footer{
     </button>
 
     <div class="collapse navbar-collapse" id="nav">
-
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="leadership.html">Leadership</a></li>
       </ul>
 
+      <a class="btn btn-gold">Join Newsletter</a>
     </div>
 
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="page-hero">
-  <div class="container">
-    <h1>Brother Marion B. Bracy</h1>
-    <p>Vice President | Facilities & Real Estate Leadership | Alpha Phi Alpha Fraternity, Inc.</p>
+<section class="hero">
+  <div class="hero-slide" style="background:url('images/hero-leadership.jpg') center/cover;">
+    <div class="hero-content">
+      <div class="container">
+        <h1>Brother Marion B. Bracy</h1>
+        <p>Retired Senior Facility Executive • Dillard University & Xavier University of Louisiana</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- CONTENT -->
+<!-- BIO SECTION -->
 <section class="section-padding">
-<div class="container">
-
-<a href="leadership.html" class="back-link">← Back to Leadership</a>
-
-<div class="row align-items-center g-5">
-
-  <!-- IMAGE -->
-  <div class="col-lg-5">
-    <img src="images/leader5.jpg" alt="Marion Bracy" class="leader-img">
-  </div>
-
-  <!-- BIO -->
-  <div class="col-lg-7">
+  <div class="container">
 
     <h2>Biography</h2>
 
@@ -164,47 +61,48 @@ footer{
     </p>
 
     <p>
-      Early in his fraternity journey, he served on the Southwest Region Election Committee (1982) and Awards Committee (1983),
-      which led to his election as Assistant Vice President for the Southwest Region in 1983. Following regional leadership transitions,
-      he served as Acting Vice President as an undergraduate brother, managing key administrative responsibilities for the region.
+      From the beginning of his membership, Brother Bracy was deeply involved in fraternity activities
+      at the city, state, and regional levels...
     </p>
 
     <p>
-      His national service expanded under multiple General Presidents, including leadership roles with the College Brother Commission,
-      where he later served as Chairman and authored the first College Brothers Advisors Handbook, adopted nationally.
-      He also served on key national committees including Elections, Time and Place, and the Headquarters Facility Audit Committee.
+     Brother Marion B. Bracy is a lifelong servant leader initiated into Alpha Phi Alpha Fraternity, Inc. on November 20, 1981, through the Beta Phi Chapter at Dillard University in New Orleans, Louisiana. From the beginning of his membership, Brother Bracy was deeply involved in fraternity activities at the city, state, and regional levels.
+
+In 1982, he was appointed to the Southwest Region Election Committee, followed by an appointment to the SWR Awards Committee in 1983. These early leadership roles sparked his interest in fraternity governance and politics. In 1983, he successfully ran for Assistant Vice President for the Southwest Region, defeating the incumbent. Following the illness of Southwest Vice President Dr. Raymond Carruthers, Bracy served as Acting Vice President as an undergraduate brother, handling major administrative duties including signing pledging and initiation forms and representing the region at official events.
+
+His national service expanded under General President Ozell Sutton, who appointed him Action Chairman of the College Brother Commission in 1984. In 1985, under General President Dr. Charles C. Teamer, Sr., he was named Chairman of the College Brothers Commission, serving for four years and authoring the first College Brothers Advisors Handbook, later adopted nationally. He also served on several national committees including Time and Place, Elections, and the Headquarters Facility Audit Committee.
+
+In 1989, Life Member #6396 became the youngest elected President of Sigma Lambda Chapter. Under his leadership, the chapter grew financially and socially and launched one of the first male-focused teenage pregnancy prevention programs, Project Alpha. In 1991, the chapter received a $5,000 grant from the Greater New Orleans Foundation, and was selected to host the 1993 National Convention. He also led the committee responsible for acquiring and renovating the Sigma Lambda Alpha House.
+
+Professionally, Brother Bracy has over four decades in higher education administration. He began at Dillard University in 1984 as a payroll accountant, later becoming Assistant Director of the Physical Plant and Director of Administration. In 1998, he joined Xavier University of Louisiana as Associate Director of Facility Planning and Management, later becoming Vice President for Facility Planning and Management in 2006.
+
+Following Hurricanes Katrina and Rita, he played a key role in Xavier’s recovery, securing over $100 million in FEMA funding and helping the university reopen within four months. Over his tenure, he oversaw more than $250 million in construction and significantly expanded campus infrastructure.
+
+In 2022, he returned to Dillard University as Vice President for Facilities and Real Estate Management, leading major capital projects including a $41 million student housing development and major HVAC infrastructure planning. He has served on multiple boards and has been recognized with numerous awards for service and leadership.
+
+He is married to Judy Ewell Bracy and is the father of three and grandfather of five. He is an active member of New Zion Baptist Church.
+
+Brother Bracy’s legacy reflects decades of leadership, service, and impact in both fraternity and higher education.
     </p>
 
-    <p>
-      In 1989, he became the youngest elected President of the Sigma Lambda Chapter. Under his leadership, the chapter launched
-      Project Alpha, secured grant funding, and was selected to host the 1993 National Convention. He also led efforts to acquire
-      and renovate the Sigma Lambda Alpha House.
-    </p>
+    <hr>
 
-    <p>
-      Professionally, Brother Bracy has over four decades of leadership in higher education facilities management. He has served
-      in senior roles at Dillard University and Xavier University of Louisiana, where he played a key role in post-Hurricane Katrina recovery,
-      securing over $100 million in FEMA funding and overseeing more than $250 million in capital construction projects.
-    </p>
-
-    <p>
-      In 2022, he returned to Dillard University as Vice President for Facilities and Real Estate Management, leading major infrastructure
-      and student housing projects. His career reflects a sustained legacy of leadership, institutional development, and service.
+    <p class="text-muted">
+      “Leadership is responsibility. Brotherhood is commitment. Legacy is impact.”
     </p>
 
   </div>
-
-</div>
-
-</div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  © 2026 Beta Phi Alumni Association
+  <div class="container text-center">
+    <p class="bottom-footer">
+      © Beta Phi Alumni Association | Built on Brotherhood. Driven by Legacy.
+    </p>
+  </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
