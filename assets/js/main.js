@@ -19,6 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(html => {
       navbarContainer.innerHTML = html;
+
+      // optional: mark active page AFTER load
+      const links = document.querySelectorAll(".nav-link");
+      links.forEach(link => {
+        if (link.href === window.location.href) {
+          link.classList.add("active");
+        }
+      });
     })
     .catch(err => {
       console.error("Navbar load error:", err);
