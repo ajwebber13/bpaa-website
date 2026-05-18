@@ -15,54 +15,73 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet"/>
 
-<!-- YOUR MAIN CSS -->
+<!-- MAIN CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
 
-<!-- NAVBAR INJECTION -->
+<!-- NAVBAR (loaded via JS) -->
 <div id="navbar"></div>
 
 <!-- ========================= HERO ========================= -->
 <section class="page-hero">
-  <div class="container">
+  <div class="container text-center">
     <div class="fade-up">
+
       <h1 class="display-4 fw-bold">Executive Leadership</h1>
-      <p class="text-muted mt-3">
-        Honoring the brothers who lead with legacy, service, and excellence.
+
+      <p class="text-muted mt-3 mx-auto" style="max-width:700px;">
+        The Beta Phi Alumni Association Executive Board represents a legacy of leadership,
+        service, and excellence across generations of brotherhood.
       </p>
+
+      <div class="mt-4">
+        <span class="badge text-bg-dark px-3 py-2">Legacy Driven</span>
+        <span class="badge text-bg-dark px-3 py-2">Service Focused</span>
+        <span class="badge text-bg-dark px-3 py-2">Brotherhood First</span>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ========================= FEATURED LEADER ========================= -->
+<!-- ========================= FEATURED CHAIRMAN ========================= -->
 <section class="section-padding">
   <div class="container">
 
     <div class="row align-items-center g-5">
 
-      <div class="col-lg-5">
-        <img src="images/leader1.jpg" class="leader-card img-fluid" alt="Chairman">
+      <div class="col-lg-6">
+        <div class="leader-featured">
+          <img src="images/leader1.jpg" alt="Chairman">
+        </div>
       </div>
 
-      <div class="col-lg-7">
-        <h2 class="mb-3">Brother Charles M. Ladd F'96</h2>
+      <div class="col-lg-6 fade-up">
+
+        <h2 class="mb-2">Brother Charles M. Ladd F'96</h2>
         <h5 class="text-warning mb-3">Board Chair / Executive Chairman</h5>
 
         <p class="text-muted">
-          A lifelong servant leader committed to advancing the mission of Beta Phi Alumni Association
-          through strategic leadership, mentorship, and community impact. His vision continues to
-          strengthen brotherhood and legacy across generations.
+          A visionary leader dedicated to strengthening brotherhood, advancing alumni engagement,
+          and building sustainable community impact through service and mentorship.
+        </p>
+
+        <p class="text-muted">
+          His leadership reflects the foundation of Beta Phi: excellence in every field of human endeavor,
+          commitment to legacy, and generational impact.
         </p>
 
         <a href="charles-ladd.html" class="btn btn-gold mt-3">
-          View Full Profile
+          View Full Biography
         </a>
+
       </div>
 
     </div>
+
   </div>
 </section>
 
@@ -72,7 +91,7 @@
 
     <h3 class="mb-3">“Built on Brotherhood. Driven by Legacy.”</h3>
     <p class="text-muted mb-0">
-      Leadership is not position — it is responsibility, service, and impact.
+      Leadership is responsibility. Brotherhood is commitment. Legacy is impact.
     </p>
 
   </div>
@@ -84,90 +103,121 @@
 
     <div class="text-center mb-5">
       <h2>Executive Board</h2>
-      <p class="text-muted">Meet the brothers leading our mission forward</p>
+      <p class="text-muted">Leadership grounded in legacy, service, and excellence</p>
     </div>
 
     <div class="row g-4">
 
-      <!-- Member 1 -->
+      <!-- Kael -->
       <div class="col-lg-4 col-md-6">
         <a href="kael-saloy.html" class="text-decoration-none">
-          <div class="leader-card">
-            <img src="images/leader2.jpg" alt="">
+
+          <div class="premium-card">
+            <div class="leader-img-wrap">
+              <img src="images/leader2.jpg" alt="">
+            </div>
+
             <div class="p-3">
-              <h4>Brother Kael Saloy F'06</h4>
-              <p>Board Treasurer</p>
+              <h4>Kael Saloy F'06</h4>
+              <p class="text-warning mb-0">Board Treasurer</p>
             </div>
           </div>
+
         </a>
       </div>
 
-      <!-- Member 2 -->
+      <!-- Malik -->
       <div class="col-lg-4 col-md-6">
         <a href="malik-bartholomew.html" class="text-decoration-none">
-          <div class="leader-card">
-            <img src="images/leader3.jpg" alt="">
+
+          <div class="premium-card">
+            <div class="leader-img-wrap">
+              <img src="images/leader3.jpg" alt="">
+            </div>
+
             <div class="p-3">
-              <h4>Brother Malik B. Bartholomew F'02</h4>
-              <p>Board Secretary</p>
+              <h4>Malik B. Bartholomew F'02</h4>
+              <p class="text-warning mb-0">Board Secretary</p>
             </div>
           </div>
+
         </a>
       </div>
 
-      <!-- Member 3 -->
+      <!-- Lester -->
       <div class="col-lg-4 col-md-6">
         <a href="lester-mckee.html" class="text-decoration-none">
-          <div class="leader-card">
-            <img src="images/leader4.jpg" alt="">
+
+          <div class="premium-card">
+            <div class="leader-img-wrap">
+              <img src="images/leader4.jpg" alt="">
+            </div>
+
             <div class="p-3">
-              <h4>Brother Lester J. McKee F'75</h4>
-              <p>Board Member / Golden Brother</p>
+              <h4>Lester J. McKee F'75</h4>
+              <p class="text-warning mb-0">Board Member</p>
             </div>
           </div>
+
         </a>
       </div>
 
-      <!-- Member 4 -->
+      <!-- Marion -->
       <div class="col-lg-4 col-md-6">
         <a href="marion-bracy.html" class="text-decoration-none">
-          <div class="leader-card">
-            <img src="images/leader5.jpg" alt="">
+
+          <div class="premium-card">
+            <div class="leader-img-wrap">
+              <img src="images/leader5.jpg" alt="">
+            </div>
+
             <div class="p-3">
-              <h4>Brother Marion B. Bracy F'81</h4>
-              <p>Board Member</p>
+              <h4>Marion B. Bracy F'81</h4>
+              <p class="text-warning mb-0">Board Member</p>
             </div>
           </div>
+
         </a>
       </div>
 
-      <!-- Member 5 -->
+      <!-- Steven -->
       <div class="col-lg-4 col-md-6">
         <a href="steven-jubert.html" class="text-decoration-none">
-          <div class="leader-card">
-            <img src="images/leader6.jpg" alt="">
+
+          <div class="premium-card">
+            <div class="leader-img-wrap">
+              <img src="images/leader6.jpg" alt="">
+            </div>
+
             <div class="p-3">
-              <h4>Brother Dr. Steven B. Jubert Jr. F'99</h4>
-              <p>Board Member</p>
+              <h4>Dr. Steven B. Jubert Jr. F'99</h4>
+              <p class="text-warning mb-0">Board Member</p>
             </div>
           </div>
+
         </a>
       </div>
 
-      <!-- Member 6 -->
+      <!-- Montae -->
       <div class="col-lg-4 col-md-6">
         <a href="montae-richardson.html" class="text-decoration-none">
-          <div class="leader-card">
-            <img src="images/leader7.jpg" alt="">
+
+          <div class="premium-card">
+            <div class="leader-img-wrap">
+              <img src="images/leader7.jpg" alt="">
+            </div>
+
             <div class="p-3">
-              <h4>Brother Montae Richardson F'06</h4>
-              <p>Board Member</p>
+              <h4>Montae Richardson F'06</h4>
+              <p class="text-warning mb-0">Board Member</p>
             </div>
           </div>
+
         </a>
       </div>
 
     </div>
+
   </div>
 </section>
 
@@ -176,16 +226,15 @@
   <div class="container text-center">
     <h4>Beta Phi Alumni Association</h4>
     <p class="text-muted">Building legacy through brotherhood and service.</p>
+
     <div class="bottom-footer mt-4">
       © 2026 Beta Phi Alumni Association
     </div>
   </div>
 </footer>
 
-<!-- ========================= SCRIPTS ========================= -->
+<!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- NAVBAR LOAD -->
 <script src="assets/js/main.js"></script>
 
 </body>
