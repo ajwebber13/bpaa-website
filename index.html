@@ -11,8 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
 
+<!-- TOP BAR -->
 <div class="top-bar py-2">
   <div class="container d-flex justify-content-between align-items-center">
     <div>Beta Phi Alumni Association | New Orleans, Louisiana</div>
@@ -24,6 +26,7 @@
   </div>
 </div>
 
+<!-- NAV -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top main-nav">
   <div class="container">
     <a class="navbar-brand" href="index.html">BETA PHI ALUMNI ASSOCIATION</a>
@@ -36,7 +39,7 @@
 
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Brotherhood</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
@@ -50,6 +53,7 @@
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="swiper heroSwiper">
     <div class="swiper-wrapper">
@@ -88,6 +92,7 @@
   </div>
 </section>
 
+<!-- ABOUT -->
 <section class="about section-padding">
   <div class="container">
     <div class="row align-items-center g-5">
@@ -108,29 +113,90 @@
   </div>
 </section>
 
-<section class="stats section-padding">
+<!-- 🔥 BROTHERHOOD SPOTLIGHT (NEW SECTION ADDED HERE) -->
+<section class="brotherhood section-padding">
   <div class="container">
-    <div class="row text-center g-4">
-      <div class="col-md-3">
-        <h2>88+</h2>
-        <p>Years of Service</p>
+
+    <div class="text-center mb-5">
+      <h2>Brotherhood Spotlight</h2>
+      <p>Honoring the brothers who continue to lead, serve, and preserve our legacy.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-md-4">
+        <div class="brother-card">
+          <img src="images/brother1.jpg" alt="Brother Spotlight">
+          <div class="brother-content">
+            <h3>Marion B. Bracy</h3>
+            <p class="role">Senior Facility Executive</p>
+            <p class="quote">“Service is not what we do, it is who we are.”</p>
+            <a href="#" class="btn btn-gold">View Story</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <h2>1938+</h2>
-        <p>Community Service</p>
+
+      <!-- CARD 2 -->
+      <div class="col-md-4">
+        <div class="brother-card">
+          <img src="images/brother2.jpg" alt="Brother Spotlight">
+          <div class="brother-content">
+            <h3>James L. Carter</h3>
+            <p class="role">Community Advocate</p>
+            <p class="quote">“Brotherhood builds what the world cannot break.”</p>
+            <a href="#" class="btn btn-gold">View Story</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <h2>10+</h2>
-        <p>Scholarships</p>
+
+      <!-- CARD 3 -->
+      <div class="col-md-4">
+        <div class="brother-card">
+          <img src="images/brother3.jpg" alt="Brother Spotlight">
+          <div class="brother-content">
+            <h3>Anthony R. Douglas</h3>
+            <p class="role">Educator & Mentor</p>
+            <p class="quote">“We lead by lifting others.”</p>
+            <a href="#" class="btn btn-gold">View Story</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <h2>138+</h2>
-        <p>Active Alumni</p>
-      </div>
+
     </div>
   </div>
 </section>
 
+<!-- STATS -->
+<section class="stats section-padding">
+  <div class="container">
+    <div class="row text-center g-4">
+
+      <div class="col-md-3">
+        <h2 class="count" data-target="88">88+</h2>
+        <p>Years of Service</p>
+      </div>
+
+      <div class="col-md-3">
+        <h2 class="count" data-target="1938">1938+</h2>
+        <p>Community Service</p>
+      </div>
+
+      <div class="col-md-3">
+        <h2 class="count" data-target="10">10+</h2>
+        <p>Scholarships</p>
+      </div>
+
+      <div class="col-md-3">
+        <h2 class="count" data-target="138">138+</h2>
+        <p>Active Alumni</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="row">
@@ -167,8 +233,10 @@
   </div>
 </footer>
 
+<!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
   const swiper = new Swiper(".heroSwiper", {
     loop: true,
@@ -179,6 +247,46 @@
       disableOnInteraction: false
     }
   });
+</script>
+
+<!-- COUNT UP SCRIPT -->
+<script>
+function animateCount(el, target, duration = 1800) {
+  let start = 0;
+  let startTime = null;
+
+  function update(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const progress = timestamp - startTime;
+
+    const value = Math.min(
+      Math.floor((progress / duration) * target),
+      target
+    );
+
+    el.textContent = value.toLocaleString();
+
+    if (progress < duration) {
+      requestAnimationFrame(update);
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      document.querySelectorAll(".count").forEach(el => {
+        const target = parseInt(el.getAttribute("data-target"));
+        animateCount(el, target);
+      });
+      obs.disconnect();
+    }
+  });
+}, { threshold: 0.5 });
+
+observer.observe(document.querySelector(".stats"));
 </script>
 
 </body>
